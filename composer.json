@@ -13,9 +13,7 @@
         "illuminate/support": "4.2.*"
     },
     "autoload": {
-        "psr-0": {
-            "Mrsimonbennett\\Dipcontroller": "src/"
-        }
+        "psr-0": {"MrSimonBennett": "src"}
     },
     "minimum-stability": "stable"
 }
