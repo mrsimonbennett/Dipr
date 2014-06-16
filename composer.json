@@ -1,7 +1,8 @@
 {
     "name": "mrsimonbennett/dipr",
     "license" : "MIT",
-    "description": "",
+    "keywords": ["laravel"],
+    "description": "Dependency Injection For Controller Methods in Laravel",
     "authors": [
         {
             "name": "Simon Bennett",
