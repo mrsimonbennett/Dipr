@@ -53,17 +53,24 @@ class ProcessController extends \BaseController
 
     /**
      * @param Request                $request
-     * @param PerformCountDownSolver $performCountDownSolver
      */
     public function getRequest(Request $request)
     {
         return $request->All();
     }
+     /**
+     * @param Request                $request
+     * @param string                 $slugFromRouteConfig
+     */
     public function getRequestWithURLSlug(Request, $request, $slugFromRouteConfig)
     {
     
     }
-    
+      /**
+     * @param User                   $userFromRouteConfig
+     * @param Request                $request
+     * @param string                 $randomSlugStringFromRouteConfig
+     */
     public function getRequestWithModelFromRouter(User $userFromRouteConfig,Request $request, $randomSlugStringFromRouteConfig)
     {
     
