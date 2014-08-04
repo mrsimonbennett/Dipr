@@ -62,7 +62,7 @@ class ProcessController extends \BaseController
      * @param Request                $request
      * @param string                 $slugFromRouteConfig
      */
-    public function getRequestWithURLSlug(Request, $request, $slugFromRouteConfig)
+    public function getRequestWithURLSlug(Request $request, $slugFromRouteConfig)
     {
     
     }
