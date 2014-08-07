@@ -3,6 +3,7 @@
 namespace Mrsimonbennett\Dipr;
 
 use Illuminate\Routing\Controller as LaravelController;
+use ReflectionException;
 use ReflectionMethod;
 
 /**
@@ -21,7 +22,13 @@ class Controller extends LaravelController
         $objects = [];
         $this->setupLayout();
 
-        $methodParams = $this->detectParameters($method);
+        try{
+            $methodParams = $this->detectParameters($method);
+        }
+        catch (ReflectionException $ex )
+        {
+            return parent::callAction($method,$routingParameters);
+        }
 
         foreach ($routingParameters as $rpKey => $rpValue) {
             if (is_object($rpValue)) {
